@@ -1,0 +1,349 @@
+@import "vars";
+
+/*==========  Desktop First  ==========*/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1199px) {
+
+	.section {
+		&-catalog {
+			&-row {
+				.button {
+					flex-grow: 0;
+					flex-basis: 200px;
+				}
+			}
+		}
+
+		&-dream {
+			.shags {
+				&:after {
+					left: 105px;
+					right: 105px;
+				}
+			}
+		}
+
+		&-econom {
+			.optov {
+				position: static;
+				transform: none;
+				margin: -20px auto 20px;
+			}
+		}
+	}	
+}
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 991px) {	
+
+	.main-menu {
+		background-color: #fff;
+		position: fixed;
+		top: 82px;
+		left: 0;
+		right: 0;
+		text-align: left;
+		margin-left: 0;
+		z-index: 98;
+		display: none;
+
+		ul {
+			display: block;
+			height: auto;
+			padding: 15px 0;
+
+			li {
+				margin-bottom: 10px;
+			}
+		}
+	}
+
+	.section {
+
+		&-reviews {
+			.carousel-reviews {
+				&-image {
+					max-width: 300px;
+				}
+			}
+		}
+
+		&-dream {
+			.shags {
+				&:after {
+					display: none;
+				}
+			}
+		}
+
+		&-catalog {
+			.owl {
+				&-item {
+					transform: scale(1);
+					padding: 15px 10px 20px;
+				}
+
+				&-stage-outer {
+					padding: 0;
+				}
+
+				&-dots {
+					margin-top: 15px;
+				}
+			}
+		}
+
+		&-certificate {
+			.carousel-certificate {
+				max-width: 500px;
+				margin: 0 auto;
+
+				.owl {
+					&-item {
+						transform: scale(1);
+					}
+				}
+			}
+		}
+	}
+
+}
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px) {
+
+	.section-map {
+		display: block;
+
+		iframe, div {
+			display: block;
+			width: 100%;
+		}
+	}
+
+	.button {
+		min-width: auto;
+	}
+
+	.flex-row {
+		display: block;
+		& > * {
+			width: 100%;
+		}
+	}
+
+	.owl-carousel {
+		.owl {
+			&-dots {
+				margin-top: 25px;
+			}
+		}
+	}
+
+	.form {
+		.flex-row {
+			& > .input, & > .input-div, & > .button {
+				width: 100%;
+				margin-bottom: 15px;
+			}
+		}
+
+		&.form-border {
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+
+		.error-message {
+			position: static;
+		}
+	}
+
+	.section {
+		padding: 25px 0 30px;
+
+		&-main {
+			&-title {
+				font-size: 35px;
+				margin-top: 20px;
+			}
+
+			&-subtitle {
+				font-size: 25px;
+				margin-bottom: 30px;
+			}
+		}
+
+		&-catalog {
+			&-row {
+				& > * {
+					flex-basis: 200px;
+					flex-grow: 0;
+				}
+			}
+		}
+
+		&-reviews {
+			.carousel-reviews {
+				&-item {
+					display: block;
+				}
+
+				&-image {
+					padding-right: 60px;
+					max-width: 490px;
+					margin: 0 auto 20px;
+
+					&-author {
+						right: 0;
+					}
+				}
+
+				&-author {
+					text-align: right;
+				}
+			}
+		}
+
+		&-certificate {
+			.carousel-certificate {
+				max-width: 230px;
+				margin: 0 auto;
+			}
+		}		
+
+		&-map {
+			.map-form {
+				position: static;
+				margin-bottom: 10px;
+				padding: 15px;
+			}
+
+			.map-desctop {
+				display: none;
+			}
+
+			.map-mobile {
+				display: block;
+			}
+		}
+	}	
+
+	.footer {
+		&-content {
+			flex-direction: column;
+			align-items: flex-start;
+		}
+	}
+}
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 479px) {
+	.col-xxs-12 {
+		width: 100%;
+	}
+
+	.col-xxs-offset-0 {
+		margin-left: 0;
+	}
+
+	.hidden-xss {
+		display: none !important;
+	}
+
+	.modal {
+		&-content {
+			padding: 15px;
+		}
+	}
+
+	.header {
+		&-phones {
+			font-size: 14px;
+		}
+	}
+
+	.section {
+		&-main {
+			&-title {
+				font-size: 28px;
+			}
+
+			&-subtitle {
+				font-size: 20px;
+			}
+
+		}
+	}
+
+	.footer {
+		&-content {
+			.logo {
+				display: block;
+				&-text {
+					margin-left: 0;
+
+				}
+			}
+		}
+	}
+
+}
+	/**/
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+	/**/
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+	.main-menu {
+		.container {
+			width: auto;
+			padding: 0;
+		}
+	}
+}
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+	
+}
+	/**/
+
