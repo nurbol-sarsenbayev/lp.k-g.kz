@@ -80,9 +80,9 @@ gulp.task('imagemin', function() {
 
 gulp.task('build', ['removedist', 'imagemin', 'sass', 'libs-js', 'main-js'], function() {
 
-    var buildHtml = gulp.src('app/*.html')
-        .pipe(htmlmin({collapseWhitespace: true}))    
-        .pipe(gulp.dest('dist'));
+    // var buildHtml = gulp.src('app/*.html')
+    //     .pipe(htmlmin({collapseWhitespace: true}))    
+    //     .pipe(gulp.dest('dist'));
 
     var buildFiles = gulp.src([
         'app/*.php',
